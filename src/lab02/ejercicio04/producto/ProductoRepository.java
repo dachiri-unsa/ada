@@ -1,6 +1,6 @@
 package lab02.ejercicio04.producto;
 
-import lab02.ejercicio04.general.Factory;
+import lab02.ejercicio04.general.ServiceLocator;
 
 import java.io.IOException;
 import java.nio.file.*;
@@ -11,7 +11,7 @@ import java.util.stream.Stream;
 
 
 public class ProductoRepository {
-    private final ProductoMapper mapper = Factory.getProductoMapper();
+    private final ProductoMapper mapper = ServiceLocator.getProductoMapper();
 
     private Path rutaArchivo; // "../productos.txt"
 

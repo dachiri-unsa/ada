@@ -5,7 +5,7 @@ import lab02.ejercicio04.producto.ProductoMapper;
 import lab02.ejercicio04.producto.ProductoRepository;
 import lab02.ejercicio04.producto.ProductoSortService;
 
-public class Factory {
+public class ServiceLocator {
 
     private static final ProductoRepository productoRepository;
     private static final ProductoMapper productoMapper;

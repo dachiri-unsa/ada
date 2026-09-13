@@ -26,11 +26,9 @@ public class MainSelectionSort {
                     indiceMenor = j;
                 }
             }
-
             if (indiceMenor != i) {
                 System.out.println( "Intercambio: " + listaNumeros[i] +
                                 " ↔ " + listaNumeros[indiceMenor] );
-
                 float temporal = listaNumeros[i];
                 listaNumeros[i] = listaNumeros[indiceMenor];
                 listaNumeros[indiceMenor] = temporal;

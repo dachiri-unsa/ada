@@ -1,16 +1,24 @@
 package lab02.ejercicio03;
 
+import java.time.Duration;
 import java.util.Random;
 import java.util.Scanner;
 
 public class Main {
     private static Random rand = new Random();
-    private final static int CANTIDAD_NUMEROS = 1000;
+    private final static int CANTIDAD_NUMEROS = 10000;
 
     public static void main(String[] args) {
         int[] datos = generadorNumeros();
-        String tipoOrdenamiento = "insertion";
+        //String tipoOrdenamiento = "insertion";
+        String tipoOrdenamiento = "selection";
+
+        System.out.println("Tipo Ordenamiento: "+tipoOrdenamiento);
+        long inicio = System.nanoTime();
         selectorSort(datos, tipoOrdenamiento);
+        long fin = System.nanoTime();
+        Duration duracion = Duration.ofNanos(fin - inicio);
+        System.out.println("Tiempo: " + duracion.toMillis() + " ms");
     }
 
     private static int[] generadorNumeros() {
@@ -53,6 +61,7 @@ public class Main {
                     datos[j] = datos[j-1];
                     datos[j-1] = temp;
                 }
+                else break;
             }
         }
     }

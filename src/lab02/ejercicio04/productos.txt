@@ -1,3 +1,100 @@
-1| Martillo Pequeño| 6.00
-2| Escoba Barracuda| 8.00
-3| Kilo de clavo   | 6.50
+1| Martillo Pequeño       | 6.00
+2| Escoba Barracuda       | 8.00
+3| Kilo de clavo          | 6.50
+4| Destornillador Phillips| 5.50
+5| Destornillador Plano   | 5.00
+6| Alicate Universal      | 12.00
+7| Alicate de Corte       | 11.50
+8| Alicate de Punta       | 10.00
+9| Tenaza de Carpintero   | 14.50
+10| Llave Inglesa Pequeña | 9.00
+11| Llave Inglesa Grande  | 18.00
+12| Llave Francesa        | 15.00
+13| Juego de Llaves Allen | 12.50
+14| Cinta Métrica 5m      | 8.50
+15| Cinta Métrica 10m     | 15.00
+16| Nivel de Burbuja      | 13.50
+17| Regla Metálica 30cm   | 4.50
+18| Regla Metálica 1m     | 12.00
+19| Serrucho de Mano      | 16.00
+20| Sierra para Metal     | 11.00
+21| Arco de Sierra        | 9.50
+22| Cuchilla Multiuso     | 6.00
+23| Repuesto de Cuchillas | 4.00
+24| Martillo de Carpintero| 18.00
+25| Martillo de Goma      | 14.00
+26| Martillo de Bola      | 22.00
+27| Mazo de Madera        | 16.50
+28| Combo de 2kg          | 25.00
+29| Combo de 4kg          | 38.00
+30| Pala Punta            | 28.00
+31| Pala Cuadrada         | 27.50
+32| Pico de Acero         | 35.00
+33| Barreta de Acero      | 42.00
+34| Azadón de Campo       | 30.00
+35| Rastrillo Metálico    | 22.00
+36| Rastrillo Plástico    | 15.00
+37| Escobilla de Mano     | 5.50
+38| Escoba Metálica       | 18.00
+39| Recogedor Plástico    | 7.00
+40| Balde Plástico 10L    | 12.00
+41| Balde Plástico 20L    | 19.00
+42| Carretilla de Obra    | 145.00
+43| Guantes de Trabajo    | 8.00
+44| Guantes de Cuero      | 18.50
+45| Lentes de Seguridad   | 7.50
+46| Casco de Seguridad    | 22.00
+47| Mascarilla Protección | 4.50
+48| Tapones Auditivos     | 3.50
+49| Chaleco Reflectante   | 18.00
+50| Cinta Aislante        | 4.00
+51| Cinta Adhesiva        | 5.00
+52| Cinta de Embalaje     | 6.50
+53| Silicona Transparente | 8.00
+54| Silicona Blanca       | 8.00
+55| Pistola de Silicona   | 15.00
+56| Cola Sintética 250ml  | 7.50
+57| Cola Sintética 500ml  | 12.00
+58| Super Pegamento       | 4.50
+59| Pegamento de Contacto | 11.00
+60| WD-40 Lubricante      | 18.00
+61| Aceite Multiuso       | 9.50
+62| Grasa Mecánica        | 13.00
+63| Desengrasante 500ml   | 12.50
+64| Thinner 1L            | 10.00
+65| Alcohol Industrial 1L | 9.00
+66| Pintura Blanca 1L     | 22.00
+67| Pintura Negra 1L      | 22.00
+68| Pintura Azul 1L       | 23.00
+69| Pintura Roja 1L       | 23.00
+70| Brocha 1 Pulgada      | 4.00
+71| Brocha 2 Pulgadas     | 6.00
+72| Brocha 4 Pulgadas     | 10.00
+73| Rodillo para Pintura  | 12.00
+74| Bandeja para Pintura  | 8.50
+75| Lija Grano 80         | 2.50
+76| Lija Grano 120        | 2.50
+77| Lija Grano 220        | 2.50
+78| Lija Grano 400        | 3.00
+79| Tornillo para Madera  | 0.35
+80| Tornillo Autorroscante| 0.40
+81| Tornillo Hexagonal    | 0.75
+82| Tuerca Hexagonal      | 0.30
+83| Arandela Plana        | 0.20
+84| Clavo para Madera     | 0.15
+85| Clavo de Acero        | 0.25
+86| Alambre Galvanizado   | 8.00
+87| Alambre Negro         | 7.00
+88| Cuerda de Nylon       | 12.00
+89| Cuerda de Polipropileno| 10.00
+90| Cadena Metálica       | 25.00
+91| Candado Pequeño       | 10.00
+92| Candado Mediano       | 18.00
+93| Candado Grande        | 28.00
+94| Extensión Eléctrica 5m| 22.00
+95| Extensión Eléctrica 10m| 35.00
+96| Enchufe Eléctrico     | 5.50
+97| Tomacorriente Doble   | 8.00
+98| Interruptor Simple    | 6.50
+99| Interruptor Doble     | 9.00
+100| Linterna LED          | 18.00
