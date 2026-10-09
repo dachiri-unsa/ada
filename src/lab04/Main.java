@@ -6,7 +6,7 @@ import java.util.List;
 
 public class Main {
 
-    private static final int NUMERO_VERTICES = 10_000;
+    private static final int NUMERO_VERTICES = 10;
     private static final int REPETICIONES = 20;
 
     public static void main(String[] args) {

@@ -7,14 +7,12 @@ import java.util.*;
 public class GraphGenerator {
 
     public static MSTGraph generateGraph(int vertices) {
-
         Random random = new Random();
         List<Edge> edges = new ArrayList<>();
 
         for (int i = 1; i < vertices; i++) {
             int parent = random.nextInt(i);
             int weight = random.nextInt(100) + 1;
-
             edges.add(new Edge(parent, i, weight));
         }
 
@@ -30,20 +28,14 @@ public class GraphGenerator {
         }
 
         while (extraEdges > 0) {
-
             int from = random.nextInt(vertices);
             int to = random.nextInt(vertices);
+            if (from == to) continue;
 
-            if (from == to)
-                continue;
-
-            String key = Math.min(from, to) + "-" +
-                    Math.max(from, to);
+            String key = Math.min(from, to) + "-" + Math.max(from, to);
 
             if (existingEdges.add(key)) {
-
                 int weight = random.nextInt(100) + 1;
-
                 edges.add(new Edge(from, to, weight));
                 extraEdges--;
             }

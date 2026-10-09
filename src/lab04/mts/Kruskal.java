@@ -9,14 +9,10 @@ public class Kruskal implements MSTAlgorithm {
     @Override
     public List<Edge> findMST(MSTGraph graph) {
         List<Edge> sortedEdges = new ArrayList<>(graph.edges());
-
         sortedEdges.sort(Comparator.comparingInt(Edge::weight));
-
         List<Edge> mst = new ArrayList<>();
         DSU dsu = new DSU(graph.vertices());
-
         for (Edge edge : sortedEdges) {
-
             if (dsu.union(edge.from(), edge.to())) {
                 mst.add(edge);
             }
@@ -29,26 +25,21 @@ public class Kruskal implements MSTAlgorithm {
     }
 
     private static class DSU {
-
         private final int[] parent;
         private final int[] rank;
 
         DSU(int vertices) {
-
             parent = new int[vertices];
             rank = new int[vertices];
-
             for (int i = 0; i < vertices; i++) {
                 parent[i] = i;
             }
         }
 
         int find(int x) {
-
             if (parent[x] != x) {
                 parent[x] = find(parent[x]);
             }
-
             return parent[x];
         }
 
