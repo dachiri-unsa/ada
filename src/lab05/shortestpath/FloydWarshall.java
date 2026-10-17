@@ -5,16 +5,32 @@ import lab05.graph.Graph;
 public class FloydWarshall implements AlgorithmShortestPath {
     public String name() { return "Floyd-Warshall"; }
 
-    public long[][] run(Graph g) {
-        int n = g.n;
-        long[][] d = new long[n][];
-        for (int i = 0; i < n; i++) d[i] = g.matrix[i].clone();
-        for (int k = 0; k < n; k++)
-            for (int i = 0; i < n; i++) {
-                if (d[i][k] == Graph.INF) continue;
-                for (int j = 0; j < n; j++)
-                    if (d[i][k] + d[k][j] < d[i][j]) d[i][j] = d[i][k] + d[k][j];
+    public long[][] run(Graph graph) {
+        int vertexCount = graph.n;
+        long[][] shortestDistances = new long[vertexCount][];
+
+        for (int s = 0; s < vertexCount; s++) {
+            shortestDistances[s] = graph.matrix[s].clone();
+        }
+
+        for (int intermediate = 0; intermediate < vertexCount; intermediate++) {
+            for (int source = 0; source < vertexCount; source++) {
+                if (shortestDistances[source][intermediate] == Graph.INF) {
+                    continue;
+                }
+
+                for (int destination = 0; destination < vertexCount; destination++) {
+                    long distanceThroughIntermediate =
+                            shortestDistances[source][intermediate]
+                                    + shortestDistances[intermediate][destination];
+
+                    if (distanceThroughIntermediate < shortestDistances[source][destination]) {
+                        shortestDistances[source][destination] = distanceThroughIntermediate;
+                    }
+                }
             }
-        return d;
+        }
+
+        return shortestDistances;
     }
 }
